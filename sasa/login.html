@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<meta name="keywords" content="HTML,CSS,XML,JavaScript">-->
+		<title></title>
+
+		<!--必要样式-->
+		<link rel="stylesheet" type="text/css" href="css/cav-css/cav.css" />
+		<script src="js/jquery-3.1.1.min.js"></script>
+
+		<link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.css" />
+		<script src="js/login.js"></script>
+		<title>sasa登录</title>
+		<style type="text/css">
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="container demo-1" style="width: 100%">
+			<div class="content" style="width: 100%">
+				<div id="large-header" class="large-header">
+					<div id="content1">
+                        <canvas id="demo-canvas"></canvas>
+						<div class="main">
+							<div><img src="img/logo.png"></div>
+
+							<form id="form-box" method="post" action="./index.html">
+								<div class="box">
+									<label for="name">姓名：</label>
+									<input type="text" class="yourname" name="yourname" placeholder="请输入用户名"  required/>
+									<span class="tips" id="divname">长度1~8个字符</span>
+								</div>
+
+								<div class="box">
+
+								    <label>密码：</label>
+								    <input type="password" class="yourpass" name="yourpass" placeholder="请输入你的密码"  required/>
+									<span class="tips" id="divpassword1">必须由字母和数字组成</span>
+
+								</div>
+
+								<div class="box">
+
+									<label>确认：</label>
+									<input type="password" class="yourpass1" name="yourpass2" placeholder="请再次输入你的密码"  required/>
+									<span class="tips" id="divpassword2">两次密码需要相同</span>
+
+								</div>
+
+								<div class="box">
+
+									<label>邮箱：</label>
+									<input type="text" class="youremail" name="youremail" placeholder="请输入你的邮箱"  required/>
+									<span class="tips" id="divmail"></span>
+
+								</div>
+
+								<div class="btn">
+									<button type="button" class="submit" style="margin-left: -725px;" onclick="">登录</button>
+									<input class="reset" type="reset" value="重置" />
+									<a href="index.html"><button  class="submit1"  value="暂不登录" >暂不登录</button></a>
+								</div>
+
+							</form>
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- /container -->
+		<script src="js/cav-js/TweenLite.min.js"></script>
+		<script src="js/cav-js/EasePack.min.js"></script>
+		<script src="js/cav-js/demo-1.js"></script>
+		<!--	<script src="js/cav-js/demo-2.js"></script>-->
+	</body>
+
+</html>

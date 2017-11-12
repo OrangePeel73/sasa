@@ -1,0 +1,106 @@
+.clear {
+	clear: both;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+
+/*main css*/
+
+#banner {
+	width: 100%;
+	height: 420px;
+	z-index: -1;
+	/*margin:100px auto;*/
+	/*padding:5px;*/
+	border: 1px solid #e5e5e5;
+	background: #fff;
+	clear: both;
+}
+
+.hotPic {
+	/*放置图片区域*/
+	width: 100%;
+	height: 420px;
+	position: relative;
+	top: 0px;
+	left: 0;
+	overflow: hidden;
+}
+
+.hotPic .num {
+	/*圆点区域设置*/
+	width: 100%;
+	position: relative;
+	left: 10px;
+	top: 380px;
+	z-index: 10;
+	padding-right: 8px;
+	height: 30px;
+	/* margin-left: 100px;*/
+	/*margin: auto;*/
+	margin-top: 0px;
+	text-align: center;
+}
+
+.hotPic .num span {
+	/*圆点设置*/
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	line-height: 20px;
+	font-size: 14px;
+	text-align: center;
+	margin: 5px 6px 0;
+	cursor: pointer;
+	background: #000000;
+	opacity: 0.2;
+	color: #fff;
+	border-radius: 7px 7px 7px 7px;
+	box-shadow: 0 0 6px #000000;
+}
+
+.hotPic .num span.cur {
+	/*设置圆点轮播的颜色*/
+	background-color:rgba(238 ,18, 137,0.5);
+	/*color: #fff;*/
+	opacity: 1;
+}
+
+.hotPic .pic {
+	/*设置图片显示区域*/
+	position: relative;
+	top: -30px;
+	z-index: -1;
+	height: 420px;
+	/*没有设置宽高就不会显示图片*/
+	width:100%;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.hotPic .pic li {
+	height: 420px;
+	width:100%;
+	/*position: absolute;*/
+	display: none;
+	padding: 0;
+	margin:0 auto;
+}
+
+.hotPic .pic li img {
+	height: 420px;
+	display: block;
+	vertical-align: middle;
+	margin: 0 auto;
+}

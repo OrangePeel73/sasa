@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		
+		<title>sasa</title>
+		<link rel="stylesheet" type="text/css" href="css/sasa.css" /><!--总体布局-->
+		<link rel="stylesheet" type="text/css" href="css/sasa-1.css" /><!--子盒子详细布局-->
+		<link rel="stylesheet" type="text/css" href="css/banner.css" /><!--图片轮播-->
+		<link rel="stylesheet" type="text/css" href="css/notice.css" /><!--公告-->
+		<link rel="stylesheet" type="text/css" href="css/fixed.css" /><!--固定栏-->
+		<script src="js/jquery-3.1.1.min.js"></script>
+        <!--<script src="js/jquery.easing.min.js"></script>-->
+        <script src="jqury-ui/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="jqury-ui/jquery-ui.min.css"  />
+		<link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.min.css" />
+
+		<script src="js/top-meau.js"></script><!--导航-->
+		<script src="js/banner.js"></script><!--banner图片轮播-->
+		<script src="js/notice.js"></script><!--公告滚动-->
+		<script src="js/fixed.js"></script><!---->
+		<script src="js/lefttime.js" ></script><!--倒计时-->
+		<script src="js/all-category.js" ></script>
+		<script src="jqury-ui/ui.js"></script><!--autoaccomplete事件-->
+	</head>
+	<body>
+		<article>
+		
+		<!-- ************************-top****************************** -->
+		<div id="top">
+			<div class="center">
+				<div id="login">
+					<span>欢迎光临莎莎网！</span>
+					<a href="login.html" target="_blank" style="color: #ec3e7d; text-decoration: underline;">登录</a>
+					<span>或</span>
+					<a href="#" style="color: #ec3e7d; text-decoration: underline;">免费注册</a>
+				</div>
+				<div id="daohang">
+					<ul>
+						<li class="top-meau" style="width: 108px;">
+							<a href="#">
+								<span class=" glyphicon glyphicon-user"> </span>我的账户
+								<span class=" glyphicon glyphicon-menu-down"></span>
+							</a>
+							<ul>
+								<li>
+									<a href="#">我的订单</a>
+								</li>
+								<li>
+									<a href="#">我的积分</a>
+								</li>
+								<li>
+									<a href="#">我的优惠券</a>
+								</li>
+								<li>
+									<a href="#">我的收藏</a>
+								</li>
+								<li>
+									<a href="#">我的评价</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="https://www.jd.com"><span class="glyphicon glyphicon-shopping-cart"></span>我的购物车</a>
+						</li>
+						<li>
+							<a href="https://www.jd.com"><span class="glyphicon glyphicon-heart-empty"></span>我的收藏</a>
+						</li>
+						<li>
+							<a href="https://www.jd.com">我的站内信</a>
+						</li>
+						<li>
+							<a href="https://www.jd.com">积分中心</a>
+						</li>
+						<li>
+							<a href="https://www.jd.com">Global site</a>
+						</li>
+						<li style="width:130px;">
+							<a href="#">关注我们</a>
+							<a href="http://weibo.com/login.php" style="margin-left: 4px; ">
+								<img class="weibo" src="img/weibo.png">
+							</a>
+							<a href="https://wx.qq.com/" style="margin-left: 4px; ">
+								<img class="weixin" src="img/weixin.png">
+							</a>
+							<a><img src="img/weixin.jpg" class="weixin1"></a>
+							<a><img src="img/weibo.jpg" class="weibo1"></a>
+
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<!--        ********************* header -->
+		<div id="header">
+			<div class="center">
+				<div class="logo">
+					<a href="index.html" target="_blank">
+						<img src=" img/logo.png" /></a>
+				</div>
+				<div class="search">
+					<form id="form">
+						<div class="search_input">
+							<input id="input" type="text" placeholder="雅诗兰黛" />
+						</div>
+						<div class="btn1">
+							<button type="submit">搜索</button>
+						</div>	
+					</form>
+					<div id="hotw ">
+						<ul>
+							<li style="margin-left: 0;padding-left:0 ; "><a href="# " style="border-left: none; ">精华</a>
+								<span class="li-li " >|</span>
+							</li>
+							<li><a href="#">保湿</a>
+								<span class="li-li ">|</span>
+							</li>
+							<li><a href="#">面霜</a>
+								<span class="li-li ">|</span>
+							</li>
+							<li><a href="#">眼霜</a>
+								<span class="li-li ">|</li>
+							</li>
+							<li><a href="#">资生堂</a>
+								<span class="li-li">|</span>
+							</li>
+							<li><a href="# ">补水</a>
+								<span class="li-li">|</span>
+							</li>
+							<li><a href="# ">提拉紧致</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--        ********************* category -->
+		<div id="category" style="width: 100%; height: 36px;">
+			<div class="center " >
+				<div class="all-category " >
+					<div id="big " style="width: 190px; height: 36px; color: #FFFFFF; ">
+					
+						<li class="glyphicon glyphicon-th-list " style="position: relative;left: 20px; " >&nbsp;全部分类</li>
+					</div>	
+					<div class="item ">
+					    	<ul >
+					    		<a href="#"><div class="all-category-img all-category-img1 "></div>
+					    			<li class="level-1 level-11" >面部护肤<i class="down"></i>
+					    			<span class="glyphicon glyphicon-menu-right " ></span>
+					    			  <ul class="level-2 level-21"  >
+					    		    	<a href="#none" ><strong style="padding-left: 10px; color: ##363636; font-size: 14px;">洁面/磨砂</strong></a>
+					    				<li><a href="#">泡沫洁面乳</a></li>
+					    				<li><a href="#">洁面摩斯</a></li>
+					    				<li><a href="#">洁面啫喱</a></li>
+					    				<li><a href="#">洁面奶</a></li>
+					    				<li><a href="#">洁面皂</a></li>
+					    				<li><a href="#">洁面粉</a></li>
+					    				<li><a href="#">磨砂膏</a></li>
+					    				<li><a href="#">磨砂着哩</a></li>
+					    				<br />
+					    				<a href="#none" ><strong style="position:relative;top:6px;left:-190px;font-size: 14px;">眼部彩妆</strong></a>
+					    				<li><a href="#">眉笔/眉粉</a></li>
+					    				<li><a href="#">眼影</a></li>
+					    				<li><a href="#">眼线</a></li>
+					    				<li><a href="#">睫毛膏</a></li>
+					    			</ul>
+					    			
+					    		</li></a>
+					    		<a href="#">
+					    			<div class="all-category-img all-category-img2 "></div>
+					    			<li class="level-1 level-11">彩妆<i></i>
+					    		    <span class="glyphicon glyphicon-menu-right " style="padding-left:68px; "></span>
+					    		    <ul class="level-2 level-22"  >
+					    		    	<a href="#none" ><strong style="padding-left: 10px; color: ##363636; font-size: 14px;">面部彩妆</strong></a>
+					    				<li><a href="#">洁面磨砂</a></li>
+					    				<li><a href="#">面膜</a></li>
+					    				<li><a href="#">防晒护理</a></li>
+					    				<li><a href="#">精华、化妆水</a></li>
+					    				<br />
+					    				<a href="#none" ><strong style="padding-left: 10px;font-size: 14px;">眼部彩妆</strong></a>
+					    				<li><a href="#">眉笔/眉粉</a></li>
+					    				<li><a href="#">眼影</a></li>
+					    				<li><a href="#">眼线</a></li>
+					    				<li><a href="#">睫毛膏</a></li>
+					    			</ul>
+					    			
+					    		</li></a>
+					    		<a href="#">
+					    			<div class="all-category-img all-category-img3 "></div>
+					    			<li class="level-11">香水<i></i>
+					    		   <span class="glyphicon glyphicon-menu-right " style="padding-left:68px; "></span>
+					    		   <ul class="level-2 level-23" style="height: 60px;"  >
+					    		    	<a href="#none" ><strong style="padding-left: 10px; color: ##363636; font-size: 14px;">香水</strong></a>
+					    				<li><a href="#">女士香水</a></li>
+					    				<li><a href="#">男士香水</a></li>
+					    				<li><a href="#">香水套装</a></li>
+					    				<li><a href="#">香水工具</a></li>
+					    				
+					    			</ul>
+					    		</li></a>
+					    		<a href="#">
+					    			<div class="all-category-img all-category-img4 "></div>
+					    			<li class="level-1">健康美肌<i></i>
+					    		   <span class="glyphicon glyphicon-menu-right " ></span>
+					    		   
+					    		</li></a>
+					    		<a href="#">
+					    			<div class="all-category-img all-category-img5 "></div>
+					    			<li class="level-1">纤体美胸<i></i>
+					    		   <span class="glyphicon glyphicon-menu-right " ></span>
+					    		   
+					    		</li></a>
+					    		<a href="#">
+					    			<div class="all-category-img all-category-img6 "></div>
+					    			<li class="level-1">个人护理<i></i>
+					    		   <span class="glyphicon glyphicon-menu-right " ></span>
+					    		   
+					    		</li></a>
+					    		<a href="#">
+					    			<div class="all-category-img all-category-img7 "></div>
+					    			<li class="level-1">男士专区<i></i>
+					    		   <span class="glyphicon glyphicon-menu-right " ></span>
+					    		   
+					    		</li></a>
+					    		<a href="#">
+					    			<div class="all-category-img all-category-img8 "></div>
+					    			<li class="level-1" style="border-bottom: none; ">孕婴护理<i></i>
+					    		   <span class="glyphicon glyphicon-menu-right " ></span>
+					    		   
+					    		</li></a>
+					    	</ul>
+					</div>
+				    
+				</div>
+				
+				<div class="part-category " >
+					<ul>
+						<a href="# "><li style="margin-left: 0; ">面部护肤<span>/</span></li></a>
+						<a href="# "><li>彩妆<span>/</span></li></a>
+						<a href="# "><li>限时特卖<img src="img/hot.png "/><span>/</span></li></a>
+						<a href="# "><li>贵宾专享<span>/</span></li></a>
+						<a href="# "><li>闪电保税专区<img src="img/hot.png "/><span>/</span></li></a>
+						<a href="# "><li>清仓特卖<span>/</span></li></a>
+						<a href="# "><li>所有品牌<li id="caret " class="glyphicon glyphicon-triangle-bottom " style="position: relative;top: 12px;;left: -8px; " ></li></li></a>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		<!--        ********************* banner -->
+        <div id="banner " >
+        	<div class="hotPic ">
+                <div class="num ">
+    	            <span class="cur "></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+    
+                <ul class="pic ">
+                    <li style="display:block; "><a  href="#" target="_blank ">
+                       	<img src="img/one.jpg" /></a>
+                    </li>
+                    <li><a  href="# " target="_blank">
+                    	<img src="img/two.jpg" /></a>
+                    </li>
+                    <li><a  href="# " target="_blank ">
+                    	<img src="img/three.jpg" /></a>
+                    </li>
+                    <li style="display:block; "><a  href="#" target="_blank ">
+                    	<img src="img/four.jpg" /></a>
+                    </li>
+                    <li style="display:block; "><a  href="#" target="_blank ">
+                    	<img src="img/five.jpg " /></a>
+                    </li>
+                    <li style="display:block; "><a  href="#" target="_blank ">
+                    	<img src="img/six.jpg" /></a>
+                    </li>
+                    <li style="display:block; "><a  href="#" target="_blank ">
+                    	<img src="img/seven.jpg" /></a>
+                    </li>
+                    <li style="display:block; "><a  href="#" target="_blank ">
+                    	<img src="img/eight.jpg" /></a>
+                    </li>
+                    <li style="display:block; "><a  href="#" target="_blank ">
+                    	<img src="img/nine.jpg" /></a>
+                    </li>
+                </ul>
+        	</div>
+        </div>
+        	<!--<div class="center "></div>-->
+        </div>
+<!--        **************************************************** notice  -->
+		<div id="notice">
+		    <div class="center">
+		    	<div class="nt-img">
+					<img src="img/notice.png">
+				</div>
+				<span style="float: left; color: #EC3E7D;position:relative;top: 5px;margin-left: 4px;"><strong>公告</strong></span>
+				
+				<div class="notice_active">
+					<ul>
+						<li class="notice_active_ch">
+							<a href="#" ><span>【物流提示公告】点击查看详情</span></a>
+						</li>
+						<li class="notice_active_ch">
+							<a href="#"><span>【郑州保税仓公告】点击查看详情</span></a>
+						</li>
+					</ul>
+				</div>
+		    </div>
+		    	
+		</div>
+
+		<!--        ****************************************************promise  -->
+		<div id="promise">
+			<div class="center ">
+				<div class="promise-item promise-item-1">
+					<div class="promise-img promise-img-1"></div>
+					<div class="promise-text">
+						<span class="promise-title">满&yen;249包邮</span>
+						<span class="promise-subit">全球采购&nbsp;海淘so&nbsp;easy</span>
+					</div>
+				</div>
+				<div class="promise-item promise-item-2">
+					<div class="promise-img promise-img-2"></div>
+					<div class="promise-text">
+						<span class="promise-title">正品保证</span>
+						<span class="promise-subit">专业护肤38年</span>
+					</div>
+				</div>
+				<div class="promise-item promise-item-3">
+					<div class="promise-img promise-img-3"></div>
+					<div class="promise-text">
+						<span class="promise-title">香港直邮</span>
+						<span class="promise-subit">香港直发&nbsp;美丽到家</span>
+					</div>
+				</div>
+				<div class="promise-item promise-item-4">
+					<div class="promise-img promise-img-4"></div>
+					<div class="promise-text">
+						<span class="promise-title">30退换保证</span>
+						<span class="promise-subit">为您提供售后无忧保障</span>
+					</div>
+				</div>
+				<div class="promise-item promise-item-5">
+					<div class="promise-img promise-img-5"></div>
+					<div class="promise-text">
+						<span class="promise-title">香港上市</span>
+						<span class="promise-subit">股票代码：HK00178</span>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--        **************************************************** must_check  -->
+
+    
+ 
+    
+	<div id="conten" style=" margin: 0 auto;"><!---->
+		<div id="tb-1"></div>
+		<div id="must-check" class="content-item content-item-1">
+			
+			<div class="center" >
+				<div id="menu">            <!--左边固定小菜单meau-->
+                  <ul>
+                        <li><a  class="taoba" href="javascript:void(0)" tit="1" >必看</a></li>
+                         <li><a   class="taoba" href="javascript:void(0)" tit="2">特卖</a></li>
+                        <li><a  class="taoba"  href="javascript:void(0)" tit="3">排行榜</a></li>
+                  </ul>
+        		</div>
+				
+                <div class="must-check-nav"> <!--每日必看-->
+					<img src="img/must_check.png "  />
+				</div>
+				<div class="must-check-img"><!--图片-->
+					<a href="#"><div class="must-check-img-left">
+						<img src="img/must-1 .jpg" class="img-thumbnail" />
+						<div class="must-check-text">
+							<p class="text-1">低至5.8折</p>
+							<p class="text-2">茱莉蔻</p>
+							<p class="text-3">天然美丽哲学</p>
+							<span class="text-btn">立即疯抢</span>
+						</div>
+					</div><a>
+					<a href="#"><div class="must-check-img-right">
+						<img src="img/must-2.jpg"class="img-thumbnail" />
+						<div class="must-check-text">
+							<p class="text-1">低至5.8折</p>
+							<p class="text-2">CHANEL</p>
+							<p class="text-3">历久弥新的独特风格</p>
+							<span class="text-btn">立即疯抢</span>
+						</div>
+					</div></a>
+					<a href="#"><div class="must-check-img-left">
+						<img src="img/must-3.jpg" class="img-thumbnail" />
+						<div class="must-check-text">
+							<p class="text-1">低至5.8折</p>
+							<p class="text-2">理肤泉、贝德玛</p>
+							<p class="text-3">医学护肤</p>
+							<span class="text-btn">立即疯抢</span>
+						</div>
+					</div></a>
+					<a href="#"><div class="must-check-img-right">
+						<img src="img/must-4.jpg"  class="img-thumbnail"/>
+						<div class="must-check-text">
+							<p class="text-1">低至5.8折</p>
+							<p class="text-2">Giorgio&nbsp;Armani</p>
+							<p class="text-3">缔造风靡全世界的时尚彩妆</p>
+							<span class="text-btn">立即疯抢</span>
+						</div>
+					</div></a>
+					<a href="#"><div class="must-check-img-left">
+						<img src="img/must-5.jpg"  class="img-thumbnail"/>
+						<div class="must-check-text">
+							<p class="text-1">低至4.5折</p>
+							<p class="text-2">兰蔻</p>
+							<p class="text-3">逆龄神话&nbsp;肌肤白嫩如新生</p>
+							<span class="text-btn">立即疯抢</span>
+						</div>
+					</div></a>
+					<a href="#"><div class="must-check-img-right">
+						<img src="img/must-6.jpg" class="img-thumbnail" />
+						<div class="must-check-text">
+							<p class="text-1">低至5.6折</p>
+							<p class="text-2">资生堂</p>
+							<p class="text-3">唤醒年轻美肌</p>
+							<span class="text-btn">立即疯抢</span>
+						</div>
+					</div></a>
+					<a href="#"><div class="must-check-img-left">
+						<img src="img/must-7.jpg"  class="img-thumbnail"/>
+						<div class="must-check-text">
+							<p class="text-1">低至4.8折</p>
+							<p class="text-2">Dior</p>
+							<p class="text-3">让女性散发朦胧诱人的雅性魅力</p>
+							<span class="text-btn">立即疯抢</span>
+						</div>
+					</div></a>
+					<a href="#"><div class="must-check-img-right">
+						<img src="img/must-8.jpg"  class="img-thumbnail"/>
+						<div class="must-check-text">
+							<p class="text-1">低至3.2折</p>
+							<p class="text-2">Dr.Jart+</p>
+							<p class="text-3">韩国星级品牌</p>
+							<span class="text-btn">立即疯抢</span>
+						</div>
+					</div></a>
+					<a href="#"><div class="must-check-img-left">
+						<img src="img/must-9.jpg"  class="img-thumbnail"/>
+						<div class="must-check-text">
+							<p class="text-1">低至2.2折</p>
+							<p class="text-2">NUXE</p>
+							<p class="text-3">来自法国&nbsp;天然植物护肤</p>
+							<span class="text-btn">立即疯抢</span>
+						</div>
+					</div></a>
+					<a href="#"><div class="must-check-img-right">
+						<img src="img/must-10.jpg" class="img-thumbnail"/>
+						<div class="must-check-text">
+							<p class="text-1">令人迷恋的香气</p>
+							<p class="text-2">JO&nbsp;MALONE</p>
+							<p class="text-3">新品上市</p>
+							<span class="text-btn">立即疯抢</span>
+						</div>
+					</div></a>
+					<a href="#"><div class="must-check-img-left">
+						<img src="img/must-11.jpg" class="img-thumbnail"/>
+						<div class="must-check-text">
+							<p class="text-1">瑞士葆丽美</p>
+							<p class="text-2">精选货品买两件</p>
+							<p class="text-3">额外可享受低至6.5折</p>
+							<span class="text-btn">立即疯抢</span>
+						</div>
+					</div></a>
+					<a href="#"><div class="must-check-img-right">
+						<img src="img/must-12.jpg" class="img-thumbnail" />
+						<div class="must-check-text">
+							<p class="text-1">低至6折</p>
+							<p class="text-2">巴黎欧莱雅</p>
+							<p class="text-3">抗皱紧致系列</p>
+							<span class="text-btn">立即疯抢</span>
+						</div>
+					</div></a>
+					<a href="#"><div class="must-check-img-left">
+						<img src="img/must-13.jpg"  class="img-thumbnail"/>
+						<div class="must-check-text">
+							<p class="text-1">Soo&nbsp;Beaute&nbsp;素美</p>
+							<p class="text-2">精选货品买两件</p>
+							<p class="text-3">额外可享受低至5折</p>
+							<span class="text-btn">立即疯抢</span>
+						</div>
+					</div></a>
+					<a href="#"><div class="must-check-img-right">
+						<img src="img/must-14.jpg" class="img-thumbnail" />
+						<div class="must-check-text">
+							<p class="text-1">全场低至1折</p>
+							<p class="text-2">Medicox</p>
+							<p class="text-3">38妇女节至激优惠</p>
+							<span class="text-btn">立即疯抢</span>
+						</div>
+					</div></a>
+				</div>
+			</div>
+		</div>
+<!-- ****************************************************limited_offer  -->
+        <div id="tb-2"></div>
+		<div id="limited-offer" class="content-item content-item-2">
+			<div class="center">
+				<div class="limited-offer-nav">
+					<img src="img/limitted_offer.png" />
+				</div>
+				<div class="limited-offer-time">每天9:00准时开抢</div>
+				<a href="#"><div class="limited-offer-img">
+					<div class="limited-offer-img-left">
+						<img src="img/limited-offer-1.jpg" />
+						<div class="limited-img-circle">
+							<b>7.6&nbsp;<span style="font-size: 18px;">折</span></b>
+						</div>
+					</div>
+					<div class="limited-offer-img-text">
+						<div class="limited-offer-text-time-box">还剩
+							<span id="day_show">0天</span>
+                            <span id="hour_show">0时</span>
+                            <span id="minute_show">0分</span>
+                            <span id="second_show">0秒</span>
+						</div>
+						<div class="limited-offer-text-main">
+							<div class="text-main-1">
+								<span class="glyphicon glyphicon-hand-right" style="margin-left: 8px;"></span>
+								清爽凝胶质地，采用Triple&nbsp;Water、马齿苋萃取及菊花萃取等成分，
+								有效保湿舒缓、美白、抗皱、改善粗糙暗哑肌肤，让肌肤保持柔软水润！
+							</div>
+							<div class="text-main-2">SNP&nbsp;LAB+三合一水库清爽面霜&nbsp;50克</div>
+							<div class="text-main-3">
+								<div class="text-main-3-1">
+									<span class="glyphicon glyphicon-yen" style="font-weight: normal; font-size: 16px;float: left;clear: both;"></span>
+									<span style="">180</span>
+								</div>
+								<div class="text-main-3-2">
+									<span style="text-decoration: line-through;">&nbsp;&nbsp;￥278</span>
+								</div>
+							</div>
+						</div>
+						<div class="limited-offer-text-btn">
+							<div class="text-btn-sold">已售
+								<span>0</span>件
+							</div>
+							<span class="text-btn-buy">马上抢</span>
+						</div>
+					</div>
+				</div>
+				
+				</a>
+				<a href="#"><div class="limited-offer-img">
+					<div class="limited-offer-img-left">
+						<img src="img/limited-offer-2.jpg" />
+						<div class="limited-img-circle">
+							<b>7.6&nbsp;<span style="font-size: 18px;">折</span></b>
+						</div>
+					</div>
+					<div class="limited-offer-img-text">
+						<div class="limited-offer-text-time-box">还剩
+							<span id="day_show-2">0天</span>
+                            <span id="hour_show-2">0时</span>
+                            <span id="minute_show-2">0分</span>
+                            <span id="second_show-2">0秒</span>
+						</div>
+						
+						<div class="limited-offer-text-main">
+							<div class="text-main-1">
+								<span class="glyphicon glyphicon-hand-right" style="margin-left: 8px;"></span>
+								清爽凝胶质地，采用Triple&nbsp;Water、马齿苋萃取及菊花萃取等成分，
+								有效保湿舒缓、美白、抗皱、改善粗糙暗哑肌肤，让肌肤保持柔软水润！
+							</div>
+							<div class="text-main-2">SNP&nbsp;LAB+三合一水库清爽面霜&nbsp;50克</div>
+							<div class="text-main-3">
+								<div class="text-main-3-1">
+									<span class="glyphicon glyphicon-yen" style="font-weight: normal; font-size: 16px;float: left;clear: both;"></span>
+									<span style="">180</span>
+								</div>
+								<div class="text-main-3-2">
+									<span style="text-decoration: line-through;">&nbsp;&nbsp;￥278</span>
+								</div>
+							</div>
+						</div>
+						<div class="limited-offer-text-btn">
+							<div class="text-btn-sold">已售
+								<span>0</span>件
+							</div>
+							<span class="text-btn-buy">马上抢</span>
+						</div>
+					</div>
+				</div>
+				</a>
+				
+				<a href="#"><div class="limited-offer-img">
+					<div class="limited-offer-img-left">
+						<img src="img/limited-offer-3.jpg" />
+						<div class="limited-img-circle">
+							<b>7.6&nbsp;<span style="font-size: 18px;">折</span></b>
+						</div>
+					</div>
+					<div class="limited-offer-img-text">
+						<div class="limited-offer-text-time-box">还剩
+							<span id="day_show-3">0天</span>
+                            <span id="hour_show-3">0时</span>
+                            <span id="minute_show-3">0分</span>
+                            <span id="second_show-3">0秒</span>
+						</div>
+						<div class="limited-offer-text-main">
+							<div class="text-main-1">
+								<span class="glyphicon glyphicon-hand-right" style="margin-left: 8px;"></span>
+								清爽凝胶质地，采用Triple&nbsp;Water、马齿苋萃取及菊花萃取等成分，
+								有效保湿舒缓、美白、抗皱、改善粗糙暗哑肌肤，让肌肤保持柔软水润！
+							</div>
+							<div class="text-main-2">SNP&nbsp;LAB+三合一水库清爽面霜&nbsp;50克</div>
+							<div class="text-main-3">
+								<div class="text-main-3-1">
+									<span class="glyphicon glyphicon-yen" style="font-weight: normal; font-size: 16px;float: left;clear: both;"></span>
+									<span style="">180</span>
+								</div>
+								<div class="text-main-3-2">
+									<span style="text-decoration: line-through;">&nbsp;&nbsp;￥278</span>
+								</div>
+							</div>
+						</div>
+						<div class="limited-offer-text-btn">
+							<div class="text-btn-sold">已售
+								<span>0</span>件
+							</div>
+							<span class="text-btn-buy">马上抢</span>
+						</div>
+					</div>
+				</div>
+				</a>
+				
+				<a href="#"><div class="limited-offer-img">
+					<div class="limited-offer-img-left">
+						<img src="img/limited-offer-4.jpg" />
+						<div class="limited-img-circle">
+							<b>7.6&nbsp;<span style="font-size: 18px;">折</span></b>
+						</div>
+					</div>
+					<div class="limited-offer-img-text">
+						<div class="limited-offer-text-time-box">还剩
+							<span id="day_show-4">0天</span>
+                            <span id="hour_show-4">0时</span>
+                            <span id="minute_show-4">0分</span>
+                            <span id="second_show-4">0秒</span>
+						</div>
+						<div class="limited-offer-text-main">
+							<div class="text-main-1">
+								<span class="glyphicon glyphicon-hand-right" style="margin-left: 8px;"></span>
+								清爽凝胶质地，采用Triple&nbsp;Water、马齿苋萃取及菊花萃取等成分，
+								有效保湿舒缓、美白、抗皱、改善粗糙暗哑肌肤，让肌肤保持柔软水润！
+							</div>
+							<div class="text-main-2">SNP&nbsp;LAB+三合一水库清爽面霜&nbsp;50克</div>
+							<div class="text-main-3">
+								<div class="text-main-3-1">
+									<span class="glyphicon glyphicon-yen" style="font-weight: normal; font-size: 16px;float: left;clear: both;"></span>
+									<span style="">180</span>
+								</div>
+								<div class="text-main-3-2">
+									<span style="text-decoration: line-through;">&nbsp;&nbsp;￥278</span>
+								</div>
+							</div>
+						</div>
+						<div class="limited-offer-text-btn">
+							<div class="text-btn-sold">已售
+								<span>0</span>件
+							</div>
+							<span class="text-btn-buy">马上抢</span>
+						</div>
+					</div>
+				</div>
+				</a>
+				<a href="#"><div class="limited-offer-img">
+					<div class="limited-offer-img-left">
+						<img src="img/limited-offer-5.jpg" />
+						<div class="limited-img-circle">
+							<b>7.6&nbsp;<span style="font-size: 18px;">折</span></b>
+						</div>
+					</div>
+					<div class="limited-offer-img-text">
+						<div class="limited-offer-text-time-box">还剩
+							<span id="day_show-5">0天</span>
+                            <span id="hour_show-5">0时</span>
+                            <span id="minute_show-5">0分</span>
+                            <span id="second_show-5">0秒</span>
+						</div>
+						<div class="limited-offer-text-main">
+							<div class="text-main-1">
+								<span class="glyphicon glyphicon-hand-right" style="margin-left: 8px;"></span>
+								清爽凝胶质地，采用Triple&nbsp;Water、马齿苋萃取及菊花萃取等成分，
+								有效保湿舒缓、美白、抗皱、改善粗糙暗哑肌肤，让肌肤保持柔软水润！
+							</div>
+							<div class="text-main-2">SNP&nbsp;LAB+三合一水库清爽面霜&nbsp;50克</div>
+							<div class="text-main-3">
+								<div class="text-main-3-1">
+									<span class="glyphicon glyphicon-yen" style="font-weight: normal; font-size: 16px;float: left;clear: both;"></span>
+									<span style="">180</span>
+								</div>
+								<div class="text-main-3-2">
+									<span style="text-decoration: line-through;">&nbsp;&nbsp;￥278</span>
+								</div>
+							</div>
+						</div>
+						<div class="limited-offer-text-btn">
+							<div class="text-btn-sold">已售
+								<span>0</span>件
+							</div>
+							<span class="text-btn-buy">马上抢</span>
+						</div>
+					</div>
+				</div>
+				</a>
+				<a href="#"><div class="limited-offer-img">
+					<div class="limited-offer-img-left">
+						<img src="img/limited-offer-6.jpg" />
+						<div class="limited-img-circle">
+							<b>7.6&nbsp;<span style="font-size: 18px;">折</span></b>
+						</div>
+					</div>
+					<div class="limited-offer-img-text">
+						<div class="limited-offer-text-time-box">还剩
+							<span id="day_show-6">0天</span>
+                            <span id="hour_show-6">0时</span>
+                            <span id="minute_show-6">0分</span>
+                            <span id="second_show-6">0秒</span>
+						</div>
+						<div class="limited-offer-text-main">
+							<div class="text-main-1">
+								<span class="glyphicon glyphicon-hand-right" style="margin-left: 8px;"></span>
+								清爽凝胶质地，采用Triple&nbsp;Water、马齿苋萃取及菊花萃取等成分，
+								有效保湿舒缓、美白、抗皱、改善粗糙暗哑肌肤，让肌肤保持柔软水润！
+							</div>
+							<div class="text-main-2">SNP&nbsp;LAB+三合一水库清爽面霜&nbsp;50克</div>
+							<div class="text-main-3">
+								<div class="text-main-3-1">
+									<span class="glyphicon glyphicon-yen" style="font-weight: normal; font-size: 16px;float: left;clear: both;"></span>
+									<span style="">180</span>
+								</div>
+								<div class="text-main-3-2">
+									<span style="text-decoration: line-through;">&nbsp;&nbsp;￥278</span>
+								</div>
+							</div>
+						</div>
+						<div class="limited-offer-text-btn">
+							<div class="text-btn-sold">已售
+								<span>0</span>件
+							</div>
+							<span class="text-btn-buy">马上抢</span>
+						</div>
+					</div>
+				</div>
+				</a>
+				<a href="#"><div class="limited-offer-img">
+					<div class="limited-offer-img-left">
+						<img src="img/limited-offer-7.jpg" />
+						<div class="limited-img-circle">
+							<b>7.6&nbsp;<span style="font-size: 18px;">折</span></b>
+						</div>
+					</div>
+					<div class="limited-offer-img-text">
+						<div class="limited-offer-text-time-box">还剩
+							<span id="day_show-7">0天</span>
+                            <span id="hour_show-7">0时</span>
+                            <span id="minute_show-7">0分</span>
+                            <span id="second_show-7">0秒</span>
+						</div>
+						<div class="limited-offer-text-main">
+							<div class="text-main-1">
+								<span class="glyphicon glyphicon-hand-right" style="margin-left: 8px;"></span>
+								清爽凝胶质地，采用Triple&nbsp;Water、马齿苋萃取及菊花萃取等成分，
+								有效保湿舒缓、美白、抗皱、改善粗糙暗哑肌肤，让肌肤保持柔软水润！
+							</div>
+							<div class="text-main-2">SNP&nbsp;LAB+三合一水库清爽面霜&nbsp;50克</div>
+							<div class="text-main-3">
+								<div class="text-main-3-1">
+									<span class="glyphicon glyphicon-yen" style="font-weight: normal; font-size: 16px;float: left;clear: both;"></span>
+									<span style="">180</span>
+								</div>
+								<div class="text-main-3-2">
+									<span style="text-decoration: line-through;">&nbsp;&nbsp;￥278</span>
+								</div>
+							</div>
+						</div>
+						<div class="limited-offer-text-btn">
+							<div class="text-btn-sold">已售
+								<span>0</span>件
+							</div>
+							<span class="text-btn-buy">马上抢</span>
+						</div>
+					</div>
+				</div>
+				</a>
+				<a href="#"><div class="limited-offer-img">
+					<div class="limited-offer-img-left">
+						<img src="img/limited-offer-8.jpg" />
+						<div class="limited-img-circle">
+							<b>7.6&nbsp;<span style="font-size: 18px;">折</span></b>
+						</div>
+					</div>
+					<div class="limited-offer-img-text">
+						<div class="limited-offer-text-time-box">还剩
+							<span id="day_show-8">0天</span>
+                            <span id="hour_show-8">0时</span>
+                            <span id="minute_show-8">0分</span>
+                            <span id="second_show-8">0秒</span>
+						</div>
+						<div class="limited-offer-text-main">
+							<div class="text-main-1">
+								<span class="glyphicon glyphicon-hand-right" style="margin-left: 8px;"></span>
+								清爽凝胶质地，采用Triple&nbsp;Water、马齿苋萃取及菊花萃取等成分，
+								有效保湿舒缓、美白、抗皱、改善粗糙暗哑肌肤，让肌肤保持柔软水润！
+							</div>
+							<div class="text-main-2">SNP&nbsp;LAB+三合一水库清爽面霜&nbsp;50克</div>
+							<div class="text-main-3">
+								<div class="text-main-3-1">
+									<span class="glyphicon glyphicon-yen" style="font-weight: normal; font-size: 16px;float: left;clear: both;"></span>
+									<span style="">180</span>
+								</div>
+								<div class="text-main-3-2">
+									<span style="text-decoration: line-through;">&nbsp;&nbsp;￥278</span>
+								</div>
+							</div>
+						</div>
+						<div class="limited-offer-text-btn">
+							<div class="text-btn-sold">已售
+								<span>0</span>件
+							</div>
+							<span class="text-btn-buy">马上抢</span>
+						</div>
+					</div>
+				</div>
+				</a>
+				<a href="#"><div class="limited-offer-img">
+					<div class="limited-offer-img-left">
+						<img src="img/limited-offer-9.jpg" />
+						<div class="limited-img-circle">
+							<b>7.6&nbsp;<span style="font-size: 18px;">折</span></b>
+						</div>
+					</div>
+					<div class="limited-offer-img-text">
+						<div class="limited-offer-text-time-box">还剩
+							<span id="day_show-9">0天</span>
+                            <span id="hour_show-9">0时</span>
+                            <span id="minute_show-9">0分</span>
+                            <span id="second_show-9">0秒</span>
+						</div>
+						<div class="limited-offer-text-main">
+							<div class="text-main-1">
+								<span class="glyphicon glyphicon-hand-right" style="margin-left: 8px;"></span>
+								清爽凝胶质地，采用Triple&nbsp;Water、马齿苋萃取及菊花萃取等成分，
+								有效保湿舒缓、美白、抗皱、改善粗糙暗哑肌肤，让肌肤保持柔软水润！
+							</div>
+							<div class="text-main-2">SNP&nbsp;LAB+三合一水库清爽面霜&nbsp;50克</div>
+							<div class="text-main-3">
+								<div class="text-main-3-1">
+									<span class="glyphicon glyphicon-yen" style="font-weight: normal; font-size: 16px;float: left;clear: both;"></span>
+									<span style="">180</span>
+								</div>
+								<div class="text-main-3-2">
+									<span style="text-decoration: line-through;">&nbsp;&nbsp;￥278</span>
+								</div>
+							</div>
+						</div>
+						<div class="limited-offer-text-btn">
+							<div class="text-btn-sold">已售
+								<span>0</span>件
+							</div>
+							<span class="text-btn-buy">马上抢</span>
+						</div>
+					</div>
+				</div>
+				</a>
+				<a href="#"><div class="limited-offer-img">
+					<div class="limited-offer-img-left">
+						<img src="img/limited-offer-10.jpg" />
+						<div class="limited-img-circle">
+							<b>7.6&nbsp;<span style="font-size: 18px;">折</span></b>
+						</div>
+					</div>
+					<div class="limited-offer-img-text">
+						<div class="limited-offer-text-time-box">还剩
+							<span id="day_show-10">0天</span>
+                            <span id="hour_show-10">0时</span>
+                            <span id="minute_show-10">0分</span>
+                            <span id="second_show-10">0秒</span>
+						</div>
+						<div class="limited-offer-text-main">
+							<div class="text-main-1">
+								<span class="glyphicon glyphicon-hand-right" style="margin-left: 8px;"></span>
+								清爽凝胶质地，采用Triple&nbsp;Water、马齿苋萃取及菊花萃取等成分，
+								有效保湿舒缓、美白、抗皱、改善粗糙暗哑肌肤，让肌肤保持柔软水润！
+							</div>
+							<div class="text-main-2">SNP&nbsp;LAB+三合一水库清爽面霜&nbsp;50克</div>
+							<div class="text-main-3">
+								<div class="text-main-3-1">
+									<span class="glyphicon glyphicon-yen" style="font-weight: normal; font-size: 16px;float: left;clear: both;"></span>
+									<span >180</span>
+								</div>
+								<div class="text-main-3-2">
+									<span style="text-decoration: line-through;">&nbsp;&nbsp;￥278</span>
+								</div>
+							</div>
+						</div>
+						<div class="limited-offer-text-btn">
+							<div class="text-btn-sold">已售
+								<span>0</span>件
+							</div>
+							<span class="text-btn-buy">马上抢</span>
+						</div>
+					</div>
+				</div>
+				</a>
+				
+				<div class="limited-offer-more">
+					<a href="#"><span >查看更多特卖</span>
+						<span class="glyphicon glyphicon-triangle-right" ></span>
+					</a>
+				</div>
+				
+				
+				
+			</div>
+		</div>
+<!--        **************************************************** ranking  -->
+		<div id="tb-3"></div>
+		<div id="ranking" class="content-item content-item-3">
+			<div class="center ">
+				<div class="ranking-nav">
+					<img src="img/ranking.png"/>
+				</div>
+			
+		     	<div class="ranking-img"><!--大盒子-->
+		     		<div class="ranking-img-left "><!--左边盒子-->
+		     			<div class="img-left-title">护肤排行榜</div>
+		     			
+		     			<div class="img-left-img"><!--第一图片-->
+		     				<div class="img-box">
+		     					<div class="img-img img-left-img-1 " >
+		     					   <a href="#"> <img src="img/rankking-1.jpg"/></a>
+		     				    </div>
+		     				
+		     				    <div class="img-left-img-2">
+		     					    <img src="img/ranking_1.png"/>
+		     				    </div>
+		     				</div>    
+		     				<div class="img-left-text">
+		     					<div class="img-text-content">
+		     				        <a href="#">SK-II&nbsp;R.N.A.&nbsp;POWER&nbsp;肌源赋活修护精华霜2.5克</a>
+		     				    </div>
+		     				    <div class="img-text-sold">
+		     						<!--<span class="glyphicon glyphicon-yen" ></span>-->
+		     					    <span  style="color: #EC3E7D; font-size:16px ;">￥25</span>
+									<span style="text-decoration: line-through; color: #CCCCCC;">&nbsp;&nbsp;￥40</span>
+		     					    <div style="float: right; color: #CCCCCC;">已售
+								        <span>0</span>件
+							        </div>
+		     					</div>
+		     				</div>
+		     			</div>
+		     			
+		     			<div class="img-left-img">
+		     				<div class="img-box">
+		     					<div class="img-img img-left-img-1 " >
+		     					   <a href="#"> <img src="img/rankking-2.jpg"/></a>
+		     				    </div>
+		     				
+		     				    <div class="img-left-img-2">
+		     					    <img src="img/ranking_2.png"/>
+		     				    </div>
+		     				</div>    
+		     				<div class="img-left-text">
+		     					<div class="img-text-content">
+		     				        <a href="#">兰蔻&nbsp;清莹柔肤水（粉水）&nbsp;400毫升</a>
+		     				    </div>
+		     				    <div class="img-text-sold">
+		     						<!--<span class="glyphicon glyphicon-yen" ></span>-->
+		     					    <span  style="color: #EC3E7D; font-size:16px ;">￥310</span>
+									<span style="text-decoration: line-through; color: #CCCCCC;">&nbsp;&nbsp;￥418</span>
+		     					    <div style="float: right; color: #CCCCCC;">已售
+								        <span>0</span>件
+							        </div>
+		     					</div>
+		     				</div>
+		     			</div>
+		     			
+		     			<div class="img-left-img">
+		     				
+		     				
+		     				<div class="img-box">
+		     					<div class="img-img img-left-img-1 " >
+		     					    <a href="#"><img src="img/rankking-3.jpg"/></a>
+		     				    </div>
+		     				
+		     				    <div class="img-left-img-2">
+		     					    <img src="img/ranking_3.png"/>
+		     				    </div>
+		     				</div>    
+		     				<div class="img-left-text">
+		     					<div class="img-text-content">
+		     				        <a href="#">SK-II&nbsp;净肌护肤洁面乳&nbsp;小样&nbsp;20毫升</a>
+		     				    </div>
+		     				    <div class="img-text-sold">
+		     						<!--<span class="glyphicon glyphicon-yen" ></span>-->
+		     					    <span  style="color: #EC3E7D; font-size:16px ;">￥199</span>
+									<span style="text-decoration: line-through; color: #CCCCCC;">&nbsp;&nbsp;￥400</span>
+		     					    <div style="float: right; color: #CCCCCC;">已售
+								        <span>0</span>件
+							        </div>
+		     					</div>
+		     				</div>
+		     				
+		     			</div>
+		     			
+		     		    <div class="img-left-img">
+		     				
+		     				
+		     				<div class="img-box">
+		     					<div class="img-img img-left-img-1 " >
+		     					    <a href="#"><img src="img/rankking-4.jpg"/></a>
+		     				    </div>
+		     				
+		     				    <!--<div class="img-left-img-2">
+		     					    <img src="img/ranking_1.png"/>
+		     				    </div>-->
+		     				</div>    
+		     				<div class="img-left-text">
+		     					<div class="img-text-content">
+		     				        <a href="#">雅诗兰黛&nbsp;弹性紧实系列&nbsp;弹性紧实紧肤面颈霜SPF15&nbsp;小样&nbsp;15毫升</a>
+		     				    </div>
+		     				    <div class="img-text-sold">
+		     						<!--<span class="glyphicon glyphicon-yen" ></span>-->
+		     					    <span  style="color: #EC3E7D; font-size:16px ;">￥200</span>
+									<span style="text-decoration: line-through; color: #CCCCCC;">&nbsp;&nbsp;￥400</span>
+		     					    <div style="float: right; color: #CCCCCC;">已售
+								        <span>0</span>件
+							        </div>
+		     					</div>
+		     				</div>
+		     				
+		     			</div>	
+		     			
+		     			<div class="img-left-img">
+		     				
+		     				
+		     				<div class="img-box">
+		     					<div class="img-img img-left-img-1 " >
+		     					    <a href="#"><img src="img/rankking-5.jpg"/></a>
+		     				    </div>
+		     				
+		     				    
+		     				</div>    
+		     				<div class="img-left-text">
+		     					<div class="img-text-content">
+		     				        <a href="#">Rosette&nbsp;去角质凝胶&nbsp;120克</a>
+		     				    </div>
+		     				    <div class="img-text-sold">
+		     						<!--<span class="glyphicon glyphicon-yen" ></span>-->
+		     					    <span  style="color: #EC3E7D; font-size:16px ;">￥25</span>
+									<span style="text-decoration: line-through; color: #CCCCCC;">&nbsp;&nbsp;￥40</span>
+		     					    <div style="float: right; color: #CCCCCC;">已售
+								        <span>0</span>件
+							        </div>
+		     					</div>
+		     				</div>
+		     				
+		     			</div>
+		     			
+		     		</div>
+		     		
+		     		<div class="ranking-img-center "><!--中间图片-->
+		     			<div class="img-left-title">彩妆排行榜</div>
+		     			
+		     			<div class="img-left-img"><!--第一图片-->
+		     				<div class="img-box">
+		     					<div class="img-img img-left-img-1 " >
+		     					   <a href="#"> <img src="img/rankking-6.jpg"/></a>
+		     				    </div>
+		     				
+		     				    <div class="img-left-img-2">
+		     					    <img src="img/ranking_1.png"/>
+		     				    </div>
+		     				</div>    
+		     				<div class="img-left-text">
+		     					<div class="img-text-content">
+		     				        <a href="#">SK-II&nbsp;R.N.A.&nbsp;POWER&nbsp;肌源赋活修护精华霜2.5克</a>
+		     				    </div>
+		     				    <div class="img-text-sold">
+		     						<!--<span class="glyphicon glyphicon-yen" ></span>-->
+		     					    <span  style="color: #EC3E7D; font-size:16px ;">￥25</span>
+									<span style="text-decoration: line-through; color: #CCCCCC;">&nbsp;&nbsp;￥40</span>
+		     					    <div style="float: right; color: #CCCCCC;">已售
+								        <span>0</span>件
+							        </div>
+		     					</div>
+		     				</div>
+		     			</div>
+		     			
+		     			<div class="img-left-img">
+		     				<div class="img-box">
+		     					<div class="img-img img-left-img-1 " >
+		     					   <a href="#"> <img src="img/rankking-7.jpg"/></a>
+		     				    </div>
+		     				
+		     				    <div class="img-left-img-2">
+		     					    <img src="img/ranking_2.png"/>
+		     				    </div>
+		     				</div>    
+		     				<div class="img-left-text">
+		     					<div class="img-text-content">
+		     				        <a href="#">兰蔻&nbsp;清莹柔肤水（粉水）&nbsp;400毫升</a>
+		     				    </div>
+		     				    <div class="img-text-sold">
+		     						<!--<span class="glyphicon glyphicon-yen" ></span>-->
+		     					    <span  style="color: #EC3E7D; font-size:16px ;">￥310</span>
+									<span style="text-decoration: line-through; color: #CCCCCC;">&nbsp;&nbsp;￥418</span>
+		     					    <div style="float: right; color: #CCCCCC;">已售
+								        <span>0</span>件
+							        </div>
+		     					</div>
+		     				</div>
+		     			</div>
+		     			
+		     			<div class="img-left-img">
+		     				
+		     				
+		     				<div class="img-box">
+		     					<div class="img-img img-left-img-1 " >
+		     					    <a href="#"><img src="img/rankking-8.jpg"/></a>
+		     				    </div>
+		     				
+		     				    <div class="img-left-img-2">
+		     					    <img src="img/ranking_3.png"/>
+		     				    </div>
+		     				</div>    
+		     				<div class="img-left-text">
+		     					<div class="img-text-content">
+		     				        <a href="#">SK-II&nbsp;净肌护肤洁面乳&nbsp;小样&nbsp;20毫升</a>
+		     				    </div>
+		     				    <div class="img-text-sold">
+		     						<!--<span class="glyphicon glyphicon-yen" ></span>-->
+		     					    <span  style="color: #EC3E7D; font-size:16px ;">￥199</span>
+									<span style="text-decoration: line-through; color: #CCCCCC;">&nbsp;&nbsp;￥400</span>
+		     					    <div style="float: right; color: #CCCCCC;">已售
+								        <span>0</span>件
+							        </div>
+		     					</div>
+		     				</div>
+		     				
+		     			</div>
+		     			
+		     		    <div class="img-left-img">
+		     				
+		     				
+		     				<div class="img-box">
+		     					<div class="img-img img-left-img-1 " >
+		     					    <a href="#"><img src="img/rankking-9.jpg"/></a>
+		     				    </div>
+		     				
+		     				    <!--<div class="img-left-img-2">
+		     					    <img src="img/ranking_1.png"/>
+		     				    </div>-->
+		     				</div>    
+		     				<div class="img-left-text">
+		     					<div class="img-text-content">
+		     				        <a href="#">雅诗兰黛&nbsp;弹性紧实系列&nbsp;弹性紧实紧肤面颈霜SPF15&nbsp;小样&nbsp;15毫升</a>
+		     				    </div>
+		     				    <div class="img-text-sold">
+		     						<!--<span class="glyphicon glyphicon-yen" ></span>-->
+		     					    <span  style="color: #EC3E7D; font-size:16px ;">￥200</span>
+									<span style="text-decoration: line-through; color: #CCCCCC;">&nbsp;&nbsp;￥400</span>
+		     					    <div style="float: right; color: #CCCCCC;">已售
+								        <span>0</span>件
+							        </div>
+		     					</div>
+		     				</div>
+		     				
+		     			</div>	
+		     			
+		     			<div class="img-left-img">
+		     				
+		     				
+		     				<div class="img-box">
+		     					<div class="img-img img-left-img-1 " >
+		     					    <a href="#"><img src="img/rankking-10.jpg"/></a>
+		     				    </div>
+		     				
+		     				    
+		     				</div>    
+		     				<div class="img-left-text">
+		     					<div class="img-text-content">
+		     				        <a href="#">Rosette&nbsp;去角质凝胶&nbsp;120克</a>
+		     				    </div>
+		     				    <div class="img-text-sold">
+		     						<!--<span class="glyphicon glyphicon-yen" ></span>-->
+		     					    <span  style="color: #EC3E7D; font-size:16px ;">￥25</span>
+									<span style="text-decoration: line-through; color: #CCCCCC;">&nbsp;&nbsp;￥40</span>
+		     					    <div style="float: right; color: #CCCCCC;">已售
+								        <span>0</span>件
+							        </div>
+		     					</div>
+		     				</div>
+		     				
+		     			</div>
+		     			
+		     			
+		     			
+		     		</div>
+		     		
+		     		
+		     		
+		     		<div class="ranking-img-right ">
+		     			<div class="img-left-title">个护排行榜</div>
+		     			
+		     			<div class="img-left-img"><!--第一图片-->
+		     				<div class="img-box">
+		     					<div class="img-img img-left-img-1 " >
+		     					   <a href="#"> <img src="img/rankking-11.jpg"/></a>
+		     				    </div>
+		     				
+		     				    <div class="img-left-img-2">
+		     					    <img src="img/ranking_1.png"/>
+		     				    </div>
+		     				</div>    
+		     				<div class="img-left-text">
+		     					<div class="img-text-content">
+		     				        <a href="#">SK-II&nbsp;R.N.A.&nbsp;POWER&nbsp;肌源赋活修护精华霜2.5克</a>
+		     				    </div>
+		     				    <div class="img-text-sold">
+		     						<!--<span class="glyphicon glyphicon-yen" ></span>-->
+		     					    <span  style="color: #EC3E7D; font-size:16px ;">￥25</span>
+									<span style="text-decoration: line-through; color: #CCCCCC;">&nbsp;&nbsp;￥40</span>
+		     					    <div style="float: right; color: #CCCCCC;">已售
+								        <span>0</span>件
+							        </div>
+		     					</div>
+		     				</div>
+		     			</div>
+		     			
+		     			<div class="img-left-img">
+		     				<div class="img-box">
+		     					<div class="img-img img-left-img-1 " >
+		     					   <a href="#"> <img src="img/rankking-12.jpg"/></a>
+		     				    </div>
+		     				
+		     				    <div class="img-left-img-2">
+		     					    <img src="img/ranking_2.png"/>
+		     				    </div>
+		     				</div>    
+		     				<div class="img-left-text">
+		     					<div class="img-text-content">
+		     				        <a href="#">兰蔻&nbsp;清莹柔肤水（粉水）&nbsp;400毫升</a>
+		     				    </div>
+		     				    <div class="img-text-sold">
+		     						<!--<span class="glyphicon glyphicon-yen" ></span>-->
+		     					    <span  style="color: #EC3E7D; font-size:16px ;">￥310</span>
+									<span style="text-decoration: line-through; color: #CCCCCC;">&nbsp;&nbsp;￥418</span>
+		     					    <div style="float: right; color: #CCCCCC;">已售
+								        <span>0</span>件
+							        </div>
+		     					</div>
+		     				</div>
+		     			</div>
+		     			
+		     			<div class="img-left-img">
+		     				
+		     				
+		     				<div class="img-box">
+		     					<div class="img-img img-left-img-1 " >
+		     					    <a href="#"><img src="img/rankking-13.jpg"/></a>
+		     				    </div>
+		     				
+		     				    <div class="img-left-img-2">
+		     					    <img src="img/ranking_3.png"/>
+		     				    </div>
+		     				</div>    
+		     				<div class="img-left-text">
+		     					<div class="img-text-content">
+		     				        <a href="#">SK-II&nbsp;净肌护肤洁面乳&nbsp;小样&nbsp;20毫升</a>
+		     				    </div>
+		     				    <div class="img-text-sold">
+		     						<!--<span class="glyphicon glyphicon-yen" ></span>-->
+		     					    <span  style="color: #EC3E7D; font-size:16px ;">￥199</span>
+									<span style="text-decoration: line-through; color: #CCCCCC;">&nbsp;&nbsp;￥400</span>
+		     					    <div style="float: right; color: #CCCCCC;">已售
+								        <span>0</span>件
+							        </div>
+		     					</div>
+		     				</div>
+		     				
+		     			</div>
+		     			
+		     		    <div class="img-left-img">
+		     				
+		     				
+		     				<div class="img-box">
+		     					<div class="img-img img-left-img-1 " >
+		     					    <a href="#"><img src="img/rankking-14.jpg"/></a>
+		     				    </div>
+		     				
+		     				    <!--<div class="img-left-img-2">
+		     					    <img src="img/ranking_1.png"/>
+		     				    </div>-->
+		     				</div>    
+		     				<div class="img-left-text">
+		     					<div class="img-text-content">
+		     				        <a href="#">雅诗兰黛&nbsp;弹性紧实系列&nbsp;弹性紧实紧肤面颈霜SPF15&nbsp;小样&nbsp;15毫升</a>
+		     				    </div>
+		     				    <div class="img-text-sold">
+		     						<!--<span class="glyphicon glyphicon-yen" ></span>-->
+		     					    <span  style="color: #EC3E7D; font-size:16px ;">￥200</span>
+									<span style="text-decoration: line-through; color: #CCCCCC;">&nbsp;&nbsp;￥400</span>
+		     					    <div style="float: right; color: #CCCCCC;">已售
+								        <span>0</span>件
+							        </div>
+		     					</div>
+		     				</div>
+		     				
+		     			</div>	
+		     			
+		     			<div class="img-left-img">
+		     				
+		     				
+		     				<div class="img-box">
+		     					<div class="img-img img-left-img-1 " >
+		     					    <a href="#"><img src="img/rankking-15.jpg"/></a>
+		     				    </div>
+		     				
+		     				    
+		     				</div>    
+		     				<div class="img-left-text">
+		     					<div class="img-text-content">
+		     				        <a href="#">Rosette&nbsp;去角质凝胶&nbsp;120克</a>
+		     				    </div>
+		     				    <div class="img-text-sold">
+		     						<!--<span class="glyphicon glyphicon-yen" ></span>-->
+		     					    <span  style="color: #EC3E7D; font-size:16px ;">￥25</span>
+									<span style="text-decoration: line-through; color: #CCCCCC;">&nbsp;&nbsp;￥40</span>
+		     					    <div style="float: right; color: #CCCCCC;">已售
+								        <span>0</span>件
+							        </div>
+		     					</div>
+		     				</div>
+		     				
+		     			</div>
+		     			
+		     			
+		     			
+		     			
+		     		</div><!--右边盒子-->
+		     		
+		     		
+		     		
+		    	</div>
+				
+				
+				
+				
+				
+			</div>
+		</div>
+
+	</div>
+	
+	</div><!---->
+	
+<!--        **************************************************** footer -->
+ 		
+
+		<div id="footer">
+			<div class="center">
+				<div class="footer-promise"><!--promise-->
+				    <div class="promise-item promise-item-1"><!--同promise-->
+					    <div class="promise-img promise-img-1"></div>
+					    <div class="promise-text">
+						    <span class="promise-title">满&yen;249包邮</span>
+						    <span class="promise-subit">全球采购&nbsp;海淘so&nbsp;easy</span>
+					    </div>
+				    </div>
+				    <div class="promise-item promise-item-2">
+					    <div class="promise-img promise-img-2"></div>
+					    <div class="promise-text">
+						    <span class="promise-title">正品保证</span>
+						    <span class="promise-subit">专业护肤38年</span>
+					    </div>
+				    </div>
+				    <div class="promise-item promise-item-3">
+					    <div class="promise-img promise-img-3"></div>
+					    <div class="promise-text">
+						    <span class="promise-title">香港直邮</span>
+						    <span class="promise-subit">香港直发&nbsp;美丽到家</span>
+					    </div>
+				    </div>
+				    <div class="promise-item promise-item-4">
+					    <div class="promise-img promise-img-4"></div>
+					    <div class="promise-text">
+						    <span class="promise-title">30退换保证</span>
+						    <span class="promise-subit">为您提供售后无忧保障</span>
+					    </div>
+				    </div>
+				    <div class="promise-item promise-item-5">
+					    <div class="promise-img promise-img-5"></div>
+					    <div class="promise-text">
+						    <span class="promise-title">香港上市</span>
+						    <span class="promise-subit">股票代码：HK00178</span>
+					    </div>
+				    </div>
+			    </div>	
+			    
+			    <div class="footer-contact"><!--contact联系我们等等-->
+			    	<div class="footer-contact-left">
+			    		<div class="contact-left-text">
+			    			<div class="contact-box new">
+			    				<a href="#" class="strong"><strong>新手上路</strong></a>
+			    				<ul>
+			    					<a href="#"><li>购物流程</li></a>
+			    					<a href="#"><li>优惠券说明</li></a>
+			    					<a href="#"><li>常见问题</li></a>
+			    					<a href="#"><li>联系我们</li></a>
+			    				</ul>
+			    			</div>
+			    			<div class="contact-box payment">
+			    				<a href="#" class="strong"><strong>支付方式</strong></a>
+			    				<ul>
+			    					<a href="#"><li>在线支付</li></a>
+			    					<a href="#"><li>积分支付</li></a>
+			    					
+			    				</ul>
+			    			</div>
+			    			<div class="contact-box delivery">
+			    				<a href="#" class="strong"><strong>配送方式</strong></a>
+			    				<ul>
+			    					<a href="#"><li>配送说明</li></a>
+			    					<a href="#"><li>追踪订单</li></a>
+			    					
+			    				</ul>
+			    			</div>
+			    			<div class="contact-box after-sold-service">
+			    				<a href="#" class="strong"><strong>售后服务</strong></a>
+			    				<ul>
+			    					<a href="#"><li>正品保证</li></a>
+			    					<a href="#"><li>价格承诺</li></a>
+			    					<a href="#"><li>30日退换保证</li></a>
+			    					<a href="#"><li>退款程序</li></a>
+			    					<a href="#"><li>更改订单</li></a>
+			    				</ul>
+			    			</div>
+			    			<div class="contact-box member">
+			    				<a href="#" class="strong"><strong>莎莎会员</strong></a>
+			    				<ul>
+			    					<a href="#"><li>积分奖赏</li></a>
+			    					<a href="#"><li>VIP会员计划</li></a>
+			    					
+			    				</ul>
+			    			</div>
+			    		</div>
+			    		   		
+			    		<div class="contact-left-img">
+			    			<a href="#"><img src="img/footer.jpg" /></a>
+			    		</div>
+			    	</div>
+			    	
+			    	
+			    	<div class="footer-contact-right">
+			    		<div class="footer-weibo">
+			    			<img src="img/weibo.jpg" />
+			    			<div class="official" >莎莎网官方微博</div>
+			    			<div class="official-1">@莎莎网</div>
+			    		</div>
+			    		<div class="footer-weixin">
+			    			<img src="img/weixin.jpg" />
+			    			<div class="official">莎莎网官方微信</div>
+			    			<div class="official-1">ID:hksasadotcom</div>
+			    		</div>
+			    	</div><!--二维码-->
+			    	
+			    	
+			    	<div class="right-fixed">
+			    		<div class="fixed-box">
+			    			<div class="first">
+			    				<div class="need">选购境外商品需知</div>
+			    				<a href="#"><div class="account" >
+			    					<span class="glyphicon glyphicon-user"></span>
+			    				</div></a>
+			    			</div>
+			    			
+			    			<a href="#"><div class="two">
+			    				<div class="shop-cart">
+			    					<span class="glyphicon glyphicon-shopping-cart" ></span>
+			    				              购物车
+			    			        <div class="circle">0</div>
+			    			    </div>
+			    			</div></a>
+			    			
+			    			<a href="#"><div class="three">
+			    				<span class="glyphicon glyphicon-heart-empty"></span>
+			    			</div></a>
+			    			
+			    			<a href="#"><div class="four">
+			    				<span class="glyphicon glyphicon-time"></span>
+			    			</div></a>
+			    		</div>
+			    		
+			    		<div class="fixed-icon">
+			    			<a href="#"><div class="chat">
+			    				<img src="img/livechat.png" />
+			    				<!--<div style="width: 150px; height:150px;position: relative;top: -90px;right: 240px; background-color: #463265;transform: rotate(90deg);">
+			    					<div style="width: 40px; height: 40px; background-color: #CCCCCC;position: relative;top: 100px;right: -140px;-moz-transform: rotate(90deg);"></div>
+			    					<img src="img/weixin_id.jpg"  style="width: 140px;height: 140px;"/>
+			    				</div>--><!--三角-->
+			    			</div></a>
+			    			<a href="#"><span style="width: 100%; height: 40px;color:#D58512 ; padding-top: 10px; margin: 0 auto;"  class="glyphicon glyphicon-qrcode code"></span></a>
+			    		    <a>
+			    		    	
+			    		    	<!--<div  >
+			                        <div class=" glyphicon glyphicon-triangle-top" id="back" style="margin-top: -5px; color: #FFFFFF;margin: 0 auto;">
+			    		    	    	<div>top</div>
+			    		    	    </div>
+			    		        </div>-->
+			    		    </a>
+			    		</div>
+			    	</div>
+			    </div>
+			    
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			</div>
+		</div>
+<!--        ****************************************************footer_link  -->
+		<div id="footer-link">
+			<div class="center">
+				<div class="footer-box">
+					<div class="footer-other">
+						<ul>
+							<a href="#"><li style="text-align: left;padding: 0;">关于莎莎</li></a>
+							<li>|</li>
+							<a href="#"><li>使用条款</li></a>
+							<li>|</li>
+							<a href="#"><li>隐私策略</li></a>
+							<li>|</li>
+							<a href="#"><li>批发服务</li></a>
+							<li>|</li>
+							<a href="#"><li>招商合作</li></a>
+							<li>|</li>
+							<a href="#"><li>帮助中心</li></a>
+							<li>|</li>
+							<a href="#"><li>港澳店铺推广</li></a>
+							<li>|</li>
+							<a href="#"><li>人才招聘</li></a>
+							<li>|</li>
+							<a href="#"><li>联络我们</li></a>
+							<li>|</li>
+							<a href="#"><li>其他送货地区</li></a>
+						</ul>
+					</div>
+					<div class="copyright">
+						Copyright&nbsp;&nbsp;2000-2016&nbsp;&nbsp;Sa&nbsp;&nbsp;Sa&nbsp;&nbsp;
+						dot&nbsp;&nbsp;Com&nbsp;&nbsp;Limited版权所有莎莎国际控股有限公司成员
+					</div>
+				</div>
+			</div>
+		</div>
+        <button id="back" class="glyphicon glyphicon-chevron-up" style="width: 40px;" ></button>
+
+        
+</article>
+	</body>
+
+</html>
